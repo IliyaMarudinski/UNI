@@ -25,7 +25,7 @@ public class program_body {
     	}
     	
     	for(int i = 0; i < names_count; i++) {
-        	System.out.print("Name Iliq e Gei "+ (i+1) + ":  " + funct.f_name_change(Names[i]) + "\n");
+        	System.out.print("Name Nasko e Gei "+ (i+1) + ":  " + funct.f_name_change(Names[i]) + "\n");
     	}
     	scanner.close();  	
     }             

@@ -6,7 +6,7 @@ public class program_body {
     	int names_count = 0;
     	boolean check_name = false;
     	Scanner scanner = new Scanner(System.in);
-		System.out.print("Start of the program(OOP Java Iliya\n");
+		System.out.print("Start of the program(OOP Java Iliya!!!!\n");
     	while (check_name != true) {
     		System.out.print("Vyvedete broi imena: ");
     		names_count = scanner.nextInt();

@@ -24,7 +24,7 @@ public class program_body {
             		    	funct.program_1();
             		    case 2:
             		    	funct.program_2();
-            			break;
+            			break; 
             		}
             	}
     		}

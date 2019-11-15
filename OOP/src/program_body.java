@@ -8,7 +8,7 @@ public class program_body {
     	Scanner scanner = new Scanner(System.in);
 		System.out.print("Start of the program(OOP Java Iliya!!!!\n");
     	while (check_name != true) {
-    		System.out.print("Vyvedete broi imena: ");
+    		System.out.print("Vyvedete broi imena (mejdu 3 i 7): ");
     		names_count = scanner.nextInt();
     		scanner.nextLine();
         	if(names_count < 3 | names_count > 7) {

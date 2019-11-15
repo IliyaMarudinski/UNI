@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class program_body {
 	   public void Program_body(String string) 
     {
-    	int programs_num  = 1;
+    	int programs_num  = 2;
     	int select_progr  = 0;
     	String scaner_line= "";
     	boolean exit_pointer = false;
@@ -22,6 +22,8 @@ public class program_body {
             		switch(select_progr) {
             		    case 1:
             		    	funct.program_1();
+            		    case 2:
+            		    	funct.program_2();
             			break;
             		}
             	}

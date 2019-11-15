@@ -1,32 +1,40 @@
 import java.util.Scanner;
 
 public class program_body {
-	   public void Program_body(String[] args) 
-    { 
-    	int names_count = 0;
-    	boolean check_name = false;
+	   public void Program_body(String string) 
+    {
+    	int programs_num  = 1;
+    	int select_progr  = 0;
+    	String scaner_line= "";
+    	boolean exit_pointer = false;
     	Scanner scanner = new Scanner(System.in);
-		System.out.print("Start of the program(OOP Java Iliya!!!!\n");
-    	while (check_name != true) {
-    		System.out.print("Vyvedete broi imena (mejdu 3 i 7): ");
-    		names_count = scanner.nextInt();
-    		scanner.nextLine();
-        	if(names_count < 3 | names_count > 7) {
-        		System.out.print("Nevaliden broi imena!!!! \n");
-        	}
-        	else {
-        		check_name = true;
-        	}
-        }
-    	String Names[] = new String[names_count];
-    	for(int i = 0; i < names_count; i++) {
-        	System.out.print("Enter name " + (i+1) + ": ");
-    		Names[i] = scanner.nextLine();
-    	}
     	
-    	for(int i = 0; i < names_count; i++) {
-        	System.out.print("Name Nasko e Gei "+ (i+1) + ":  " + funct.f_name_change(Names[i]) + "\n");
-    	}
-    	scanner.close();  	
+		System.out.print("Start of the program(OOP Java Iliya!!!!\n");		
+    	while (exit_pointer != true) {
+    		System.out.print("\n Izberete programa mejdu 1 i " + programs_num);
+    		scaner_line = scanner.nextLine();
+    		if (funct.check_int(scaner_line)) {
+    			select_progr = Integer.parseInt(scaner_line);
+            	if(select_progr < 1 | select_progr > programs_num) {
+            		System.out.print("\n Nqma takava programa!!!!");
+            	}
+            	else {
+            		switch(select_progr) {
+            		    case 1:
+            		    	funct.program_1();
+            			break;
+            		}
+            	}
+    		}
+    		else {
+        		if (scaner_line.equals("exit")) {
+        			exit_pointer = true;
+        			System.out.print("Exit programming");
+        		} else {
+        			System.out.print("\n Nevalidno vyvedeno chislo!!!!");      			
+        		}
+    		}
+        }	
+    scanner.close(); 
     }             
 }

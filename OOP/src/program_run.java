@@ -5,7 +5,6 @@ public class program_run extends program_body{
 		   public static void main(String args[]){
 		      program_run obj = new program_run();
 		      obj.msg();
-		      obj.Program_body(null);
-		      
+		      obj.Program_body(null);	      
 		    }
 }

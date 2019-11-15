@@ -16,7 +16,7 @@ public class program_body {
     		if (funct.check_int(scaner_line)) {
     			select_progr = Integer.parseInt(scaner_line);
             	if(select_progr < 1 | select_progr > programs_num) {
-            		System.out.print("\n Nqma takava programa!!!!");
+            		System.out.print("Nqma takava programa!!!! \n");
             	}
             	else {
             		switch(select_progr) {
@@ -31,7 +31,7 @@ public class program_body {
         			exit_pointer = true;
         			System.out.print("Exit programming");
         		} else {
-        			System.out.print("\n Nevalidno vyvedeno chislo!!!!");      			
+        			System.out.print("Nevalidno vyvedeno chislo!!!! \n");      			
         		}
     		}
         }	

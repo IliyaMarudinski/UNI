@@ -51,7 +51,7 @@ public class funct {
         	}
         	
         	for(int i = 0; i < names_count; i++) {
-            	System.out.print("\n Name  Ilia"+ (i+1) + ":  " + funct.f_name_change(Names[i]));
+            	System.out.print("Name  Ilia"+ (i+1) + ":  " + funct.f_name_change(Names[i]) + "\n");
         	}
         	sc.close();  	
     	}
